@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notebook</title>
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/editProfile.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+  *{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  /* display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center; */
+  /* padding: 10px; */
+  background-color: #b0eeae;
+}
+
+.container{
+  margin-top: 5rem;
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(75deg, #b0eeae, #f1eef1);
+  padding: 20px 25px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container h2{
+  text-align: center;
+}
+
+.container .line{
+  border-top: 2px solid #033904;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container form .user-details .input-box{
+  margin-bottom: 15px;
+  margin: 10px 0 9px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details,
+.user-details .input-box-gender .details{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1px;
+  color: #033904;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #047c06;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box-gender label{
+  font-weight: 600;
+  color: #033904;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+
+.user-details .input-box input .form-select:focus,
+.user-details .input-box input .form-select:valid{
+  border-color: #033904;
+}
+
+form .button{
+  height: 45px;
+  margin: 1px 0;
+  display: flex;
+  justify-content: right;
+}
+
+form .button input{
+  height: 100%;
+  width: 15%;
+  outline-color: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #033904;
+}
+
+form .button input:hover{
+  background: #047c06;
+}
+
+form .sign{
+  display: flex;
+  justify-content: center;
+}
+
+form .sign a{
+  text-decoration: none;
+}
+
+form .sign a:hover{
+  text-decoration: underline;
+}
+
+@media (mix-width: 584px) {
+  .container{
+      max-width: 100%;
+  }   
+}
+</style>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+    <a class="navbar-brand fw-bolder" style="color:#033904" href="#"><i class='bx bxs-book-open' style='color:#033904'></i>Notebook</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+    </div>
+  </nav>
+
+  <!-- Create your Account starts -->
+  <div class="container" id="login">
+    <h2 class="fw-bolder mb-0" style="color:#033904">Edit Profile</h2>
+    <div class="line"></div>
+    <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-user' style='color:#033904'></i>Name:</span>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-user' style='color:#033904'></i>Username:</span>
+                <input type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-envelope' style='color:#033904'></i>Email:</span>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-phone' style='color:#033904'></i>Phone Number:</span>
+                <input type="number" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box-gender">
+                <span class="details"><i class='bx bx-male-female' style='color:#033904'></i>Gender:</span>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male<i class='bx bx-male-sign' style='color:#033904'></i></label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female<i class='bx bx-female-sign' style='color:#033904'></i></label>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label>
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-calendar' style='color:#033904'></i>Date of Birth:</span>
+                <input type="date" placeholder="" required>
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bx-globe' style='color:#033904'></i>Country:</span>
+                <select class="form-select" name="country" id="countrySelect">
+                  <option value="">Select Country</option>
+                </select>
+                
+            </div>
+            <div class="input-box">
+                <span class="details"><i class='bx bxs-location-plus' style='color:#033904'></i>State:</span>
+                <select class="form-select" name="state" id="stateSelect" disabled>
+                  <option value="">Select State</option>
+                </select>                
+            </div>
+        </div>
+        <div class="button">
+              <input style="background: #d10f0f; margin-right: 20px;" type="submit" onclick="index()" value="Back">
+              <input type="submit" value="Save">
+        </div>
+    </form>
+  </div>
+  <!-- Create your Account ends -->
+  <script src="/public/js/script.js"></script>
+</body>
+</html>
