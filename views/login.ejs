@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/public/css/style.css"> -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXd`XDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<style>
+  *{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  /* background-image: url('/public/img/homepage.jpg'); */
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+    /* Centering container */
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      text-align: center;
+    }
+
+    /* Input and button alignment */
+    .input-group-custom {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-group-custom input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .input-group-custom button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 25%;
+    }
+</style>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+   <div class="container-fluid">
+     <!-- Logo -->
+     <a class="navbar-brand text-danger" href="#">NETFLIX</a>
+
+     <!-- Language Select Dropdown -->
+     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item dropdown">
+          <select class="form-select me-2 bg-transparent" aria-label="Language select">
+            <option selected>Language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+         </li>
+       </ul>
+
+       <!-- Signup Button -->
+        <a href="/sign" class="btn btn-danger ml-2" type="button">Sign Up</a>
+     </div>
+   </div>
+ </nav>
+  <div class="container-fluid centered-container d-flex justify-content-center align-items-center">
+    <div class="text-center">
+      <h1 class="text-light fs-1">Unlimited movies, Tv shows and more.</h1>
+      <p class="text-light fs-2">Watch anywhere. Cancel anytime</p>
+      <p class="text-light">Ready to Watch? Enter your Email to create or restart your membership</p>
+      <div class="input-group-custom">
+        <input type="text" class="form-control" placeholder="Your email address">
+        <button class="btn btn-danger" type="button">Get Started</button>
+      </div>
+    </div>
+
+      <!-- Footer -->
+  <footer class="bg-transparent text-white text-center py-3">
+    <p class="mb-0">© 2024 PrinceDev. All rights reserved.</p>
+  </footer>
+  </div>
+</body>
+</html>

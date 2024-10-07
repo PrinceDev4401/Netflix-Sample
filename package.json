@@ -1,0 +1,16 @@
+{
+  "name": "netflix-sample",
+  "version": "1.0.0",
+  "description": "NetflixLogin",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PrinceDev",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
